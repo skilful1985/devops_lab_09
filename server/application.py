@@ -16,8 +16,8 @@ class TestMe():
 if __name__ == '__main__':
     Handler = http.server.SimpleHTTPRequestHandler
 
-""" веб-сервер отвечающий на любой запрос по дефолту
-показывает клиенту список файлов в текущем каталоге """
+#веб-сервер отвечающий на любой запрос по дефолту
+#показывает клиенту список файлов в текущем каталоге
     with socketserver.TCPServer(("", PORT), Handler) as http:
         print("serving at port", PORT)
         http.serve_forever()
