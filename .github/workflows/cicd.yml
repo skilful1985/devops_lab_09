@@ -1,6 +1,6 @@
 #./.github/workflows/cicd.yml 
 
-name: LINT-TEST-BUILD-CHECK 
+name: LINT-TEST-BUILD-CHECK
 on:
   push:
     branches: [ dev ] 			# работаем в ветке dev
