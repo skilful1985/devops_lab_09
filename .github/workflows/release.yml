@@ -38,7 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Insert release date 		# подменяем дату (обновляем манифест)
-        run: 'sed -i "s/release-date: .*$/release-date: s`date +%s`/g" ./server-k8s-manifests/devops-psu.yml'
+        run: 'sed -i "s/release-date: .*$/release-date: s`date +%s`/g" ./server-k8s-manifests/devops-psu.yml'
 
       - name: Commit manifest
         run: |				# сохраняем изменения манифеста в ветке release
