@@ -1,0 +1,4 @@
+#./requirements.txt
+
+pylint
+pytest
